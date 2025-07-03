@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../style sheets/login.css">
+</head>
+
+<body class="container">
+    <div class="login-container">
+        <div class="login-content">
+            <h1 class="welcome-text"> Welcome </h1>
+            <form class="login-form">
+                <input type="text" placeholder="שם" id="name" class="input-field" required autofocus
+                    onkeypress="checkName()" onblur="isFull()">
+                <input type="password" placeholder="סיסמא בעלת ספרות בלבד" id="pass" class="input-field" required
+                    onkeypress="checkPass()" onblur="isFull()">
+                <button type="submit" class="login-button" onclick="saveName()">התחבר </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="../js sheets/login.js"></script>
+
+</html>

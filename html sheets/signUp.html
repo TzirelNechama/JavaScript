@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="../style sheets/login.css">
+</head>
+
+<body class="container">
+    <div class="login-container">
+        <div class="login-content">
+            <h1 class="welcome-text"> Sign Up </h1>
+            <form class="login-form">
+                <input type="text" placeholder="שם" id="Fname" required autofocus class="input-field"
+                    onkeypress="checkName()" onblur="isFull()">
+                <input type="password" placeholder="סיסמא בעלת ספרות בלבד" id="Fpass" required class="input-field"
+                    onkeypress="checkPass()" onblur="isFull()">
+                <label for="c" class="words"> צבע אהוב </label><br>
+                <input type="color" id="c"><br>
+                <button type="submit" class="login-button" onclick="addName()">סיום</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../js sheets/signUp.js"></script>
+<script src="../js sheets/login.js"></script>
+
+</html>
